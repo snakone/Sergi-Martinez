@@ -1,0 +1,15 @@
+@import '../../../../theme/variables.scss';
+
+.menu {
+  --width: 200px;
+}
+
+.active .menu-icon {
+  color: var(--ion-color-primary);
+}
+
+ion-icon {
+  position: relative; 
+  top: 1px;
+  margin-left: 5px;
+}

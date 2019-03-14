@@ -1,0 +1,22 @@
+.language {
+  position: absolute;
+  bottom: 30px;
+  left: -1px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  & img {
+    max-width: 35px;
+    margin: 0 10px;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(1.2);
+    }
+  }
+}
+
+
+

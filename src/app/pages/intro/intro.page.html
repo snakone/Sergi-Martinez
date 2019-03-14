@@ -1,0 +1,46 @@
+<ion-toolbar class="toolbar" padding>
+  <ion-text *ngIf="index != slides.length"
+            class="animated fadeIn"
+            color="primary"
+            slot="end"
+            (click)="goToSkip()">
+            {{'slide.skip' | translate}}
+  </ion-text>
+  <ion-text *ngIf="index == slides.length"
+            class="animated fadeIn"
+            color="primary"
+            slot="end"
+            (click)="goToStart()">
+            {{'slide.back' | translate}}
+  </ion-text>
+</ion-toolbar>
+
+<ion-content padding>
+  <ion-slides #slider
+              pager="true"
+              (ionSlideDidChange)="getIndex()"
+              [options]="sliderOptions">
+    <ion-slide *ngFor="let slide of slides">
+      <img [src]="slide.image" class="slide-image"/>
+      <h2>{{slide.title | translate}}</h2>
+      <p [innerHTML]="slide.description | translate"></p>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/slide5.png" class="slide-image"/>
+      <h2>{{'fifth.slide.title' | translate}}</h2>
+      <ion-button color="primary"
+                  class="continue"
+                  (click)="goHome()">
+                  {{'slide.continue' | translate}}
+      </ion-button>
+      <p class="not-show">
+        {{'slide.skip.tutorial' | translate}}
+        <ion-checkbox [(ngModel)]="checkbox"
+                      class="checkbox"
+                      color="dark"
+                      checked="true">
+        </ion-checkbox>
+      </p>
+      </ion-slide>
+  </ion-slides>
+</ion-content>

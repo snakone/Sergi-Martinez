@@ -1,0 +1,7 @@
+<div class="language">
+  <span *ngFor="let lang of languages"
+        (click)="setLanguage(lang.lang)">
+      <img [src]="lang.img"/>
+  </span>
+</div>
+

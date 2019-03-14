@@ -1,0 +1,15 @@
+{
+  "first.slide.title": "Welcome!",
+  "first.slide.description": "Hello! I am <b>Sergi Martínez</b> and this is my most personal application. The following <b>tutorial</b> will show You what It is.",
+  "second.slide.title": "Mobile Version",
+  "second.slide.description": "This application is <b>hybrid</b>. It has been designed with web technology and converted to <b>mobile</b> platform. A new experience!",
+  "third.slide.title": "Content",
+  "third.slide.description": "Thanks for visiting this application. Learn with tutorials about web development of any kind! It's easy and fast.",
+  "fourth.slide.title": "About Me",
+  "fourth.slide.description": "Get in touch with the <b>person</b> behind this. I am software <b>developer</b> junior and I love what You see!",
+  "fifth.slide.title": "¿Ready to start?",
+  "slide.continue": "CONTINUE",
+  "slide.skip.tutorial": "Do not show again",
+  "slide.back": "Back",
+  "slide.skip": "Skip"
+}

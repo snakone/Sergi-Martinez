@@ -1,0 +1,15 @@
+{
+  "first.slide.title": "Benvingut/da!",
+  "first.slide.description": "¡Hola! Sóc en <b>Sergi Martínez</b> i aquesta és la meva aplicació mes personal. El següent <b>tutorial</b> t'indicarà de que es tracte.",
+  "second.slide.title": "Versió Móbil",
+  "second.slide.description": "Aquesta aplicació és <b>híbrida</b>. Está feta amb tecnología web y adaptada al món <b>móbil</b>. Una nova experiencia!",
+  "third.slide.title": "Contingut",
+  "third.slide.description": "Gràcies per visitar aquesta aplicació. Aprend amb tutorials de desenvolupament web de tot tipus! Es fàcil y sencill.",
+  "fourth.slide.title": "Sobre mí",
+  "fourth.slide.description": "Coneix una mica més a la <b>persona</b> d'arrere d'aixó. Sóc <b>desenvolupador</b> de software junior i estimo aixó que veus!",
+  "fifth.slide.title": "Estàs llest?",
+  "slide.continue": "CONTINUAR",
+  "slide.skip.tutorial": "No mostrar un altre cop",
+  "slide.back": "Tornar",
+  "slide.skip": "Ometre"
+ }

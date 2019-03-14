@@ -1,0 +1,16 @@
+<ion-menu class="menu" contentId="main">
+  <ion-content>
+    <ion-list class="ion-margin-top">
+      <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+        <ion-item lines="none" [routerDirection]="'forward'" [routerLink]="p.url"
+                  routerLinkActive="active">
+          <ion-icon slot="start" class="menu-icon" [name]="p.icon"></ion-icon>
+          <ion-label>
+            {{p.title}}
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+    <app-language-selector></app-language-selector>
+  </ion-content>
+</ion-menu>

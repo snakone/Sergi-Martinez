@@ -1,0 +1,51 @@
+@import '../../../theme/variables.scss';
+
+.swiper-slide {
+  flex-wrap: wrap;
+  display: block;
+}
+
+.toolbar {
+  --padding-end: 5px;
+  --padding-top: 0;
+}
+
+ion-slides {
+  --bullet-background: black;
+  --bullet-background-active: var(--ion-color-primary);
+  position: inherit;
+}
+
+.slide-image {
+  max-height: 50%;
+  max-width: 60%;
+  margin: 18px 0;
+}
+
+p {
+  padding: 0 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #60646B;
+
+  & b {
+    color: #000000;
+    font-weight: 500;
+  }
+}
+
+.continue {
+  margin-top: 5%;
+}
+
+.checkbox {
+  margin-left: 15px;
+  top: 0;
+  vertical-align: top;
+  --border-width: auto;
+}
+
+.not-show {
+  margin-top: 10%;
+}
+

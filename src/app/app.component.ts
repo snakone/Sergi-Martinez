@@ -5,10 +5,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { TranslateService } from '@ngx-translate/core';
 import { StorageService } from './shared/storage/storage.service';
-import { Router } from '@angular/router';
 import { StorageSettings } from './shared/storage/storage.settings';
+import { Router } from '@angular/router';
 
 import { timer } from 'rxjs';
+import { APP_CONSTANTS } from './app.config';
 
 @Component({
   selector: 'app-root',
@@ -19,20 +20,19 @@ import { timer } from 'rxjs';
 export class AppComponent {
 
   showSplash = true;
+  version = '0.0.1-public'
 
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    translate: TranslateService,
+    private translate: TranslateService,
     private storage: StorageService,
     private router: Router
   ) {
     this.initializeApp();
-    translate.setDefaultLang('es');
-    translate.use('es');
     this.loadStorage();
-    translate.use(this.storage.settings.lang);
+    this.translateApp();
   }
 
   initializeApp() {
@@ -61,5 +61,12 @@ export class AppComponent {
     });
   }
 
+  translateApp(): void {
+    if (this.storage.settings.lang) {
+      this.translate.use(this.storage.settings.lang);
+    } else { 
+      this.translate.use(APP_CONSTANTS.DEFAULT_LANGUAGE);
+    }
+  }
 
 }

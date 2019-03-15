@@ -25,10 +25,12 @@ export class IntroPage implements OnInit {
   }
 
   ionViewDidEnter(): void {
+    console.log('desactivando');
     this.menuCtrl.enable(false);
   }
 
   ionViewDidLeave(): void {
+    console.log('activando');
     this.menuCtrl.enable(true);
   }
 

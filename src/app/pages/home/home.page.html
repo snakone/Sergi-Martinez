@@ -1,4 +1,4 @@
-<app-ion-header [title]="'Sergi Martínez'"></app-ion-header>
+<app-ion-header [title]="'Home'"></app-ion-header>
 
 <ion-content>
     <ion-card class="welcome-card">
@@ -8,10 +8,10 @@
         <ion-card-title>Sergi Martínez</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>
-         {{'home.welcome' | translate}}
-          features and components. Check out some of the resources below for next steps.
+        <p [innerHTML]="'home.welcome' | translate">
         </p>
       </ion-card-content>
     </ion-card>
+    <p [innerHTML]="'home.look' | translate">
+    </p>
 </ion-content>

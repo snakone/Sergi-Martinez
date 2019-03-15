@@ -11,5 +11,7 @@
   "slide.continue": "CONTINUE",
   "slide.skip.tutorial": "Do not show again",
   "slide.back": "Back",
-  "slide.skip": "Skip"
+  "slide.skip": "Skip",
+  "home.welcome": "Welcome! It is a plessure that You are here.",
+  "home.look": "Take a look at the most recent <b>contenido</b>."
 }

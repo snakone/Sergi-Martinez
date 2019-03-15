@@ -11,5 +11,7 @@
  "slide.continue": "CONTINUAR",
  "slide.skip.tutorial": "No mostrar de nuevo",
  "slide.back": "Volver",
- "slide.skip": "Saltar"
+ "slide.skip": "Saltar",
+ "home.welcome": "¡Bienvenido/a! Es un placer que estés aquí.",
+ "home.look": "Echa un vistazo al <b>contenido</b> más reciente."
 }

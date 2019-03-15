@@ -35,3 +35,11 @@
       transform: rotate(360deg);
     }
   }
+
+  .app-version {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #fff;
+    font-size: 1.2em;
+  }

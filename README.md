@@ -1,2 +1,2 @@
 # Sergi-Martinez
-Personal Site - Ionic 4
+Personal App - Ionic 4
